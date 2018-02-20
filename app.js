@@ -3,7 +3,7 @@
 let gameQuesAndAns = {
 
     'categoryOneQuesOne':{
-    question: 'She is a sword weilding baddie in a post apolyptic world where the dead walk.',
+    question: 'She is a sword carrying baddie in a post apolyptic world where the dead walk.',
     answer: 'Who is Michonne?',
     pointsAwarded: 200
 },
@@ -148,12 +148,12 @@ function gamePlay (tableId) {
     if (playerAnswer === answer){
         document.getElementById(tableId).innerHTML = 
         'You are correct!';
-        playerPoints += points;
-        score.innerHTML = playerPoints;
+        pointsaAwarded += points;
+        score.innerHTML = pointsAwarded;
 
     }else {
         document.getElementById(tableId).innerHTML=
-        'Sorry, wrong answer.';
-        playerPoints -= points;
+        'Sorry wrong answer.';
+        pointsAwarded -= points;
     };
 }
